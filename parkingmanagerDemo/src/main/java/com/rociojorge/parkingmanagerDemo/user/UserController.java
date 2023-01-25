@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class UserController {
     
-    //hola
+    
     private UserRepository repository = new UserRepository();
         
     @GetMapping("/usuarios")

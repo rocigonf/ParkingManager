@@ -5,13 +5,17 @@ import java.util.List;
 
 public class UserRepository {
 
-    
-    public List<User> getAll(){
+    private ArrayList<User> usuarios;
+    public UserRepository() {
+        usuarios = new ArrayList<>();
+    }
 
+    public List<User> getAll() {
         //TODO : Eliminar este codigo
-        ArrayList<User> users = new ArrayList<>();
-        users.add(new User("rocio", "prueba@gmail.com"));
-        return users;
+        this.usuarios.clear();
+        this.usuarios.add(new User("prueba@gmail.com", "Rocio"));
+        this.usuarios.add(new User("pruebaJorge@gmail.com", "Jorge"));
+        return usuarios;
 
     }
 
