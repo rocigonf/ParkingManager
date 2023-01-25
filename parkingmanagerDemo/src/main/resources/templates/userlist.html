@@ -9,9 +9,9 @@
 <body>
     <h1>Lista de usuarios</h1>
     <br>
-    <ul th:each="user: ${user}">
+    <ul th:each="user: ${users}">
         <li>
-            <p th:text="${user.name}"></p>
+            <p th:text="${user.email}"></p>
         </li>
     </ul>
 </body>
