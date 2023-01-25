@@ -1,0 +1,18 @@
+package com.rociojorge.parkingmanagerDemo.user;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class UserController {
+    
+    //hola
+    private UserRepository repository = new UserRepository();
+        
+    @GetMapping("/usuarios")
+    public String displayUsers(Model model) {
+        model.addAttribute("users", repository.getAll());
+        return "listausuarios";
+    }
+}
