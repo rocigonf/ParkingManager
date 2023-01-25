@@ -15,7 +15,7 @@ public class UserRepository {
         this.user.clear();
         this.user.add(new User("prueba@gmail.com", "Rocio"));
         this.user.add(new User("pruebaJorge@gmail.com", "Jorge"));
-        return user;
+        return this.user;
 
     }
 
