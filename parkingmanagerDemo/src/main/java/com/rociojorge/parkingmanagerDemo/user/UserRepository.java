@@ -13,9 +13,9 @@ public class UserRepository {
     public List<User> getAll() {
         
         this.user.clear();
-        this.user.add(new User(null, null, null, null));
-        this.user.add(new User(null, null, null, null));
-        this.user.add(new User(null, null, null, null));
+        this.user.add(new User("Jorge", "Reina", "Romero", "Alumno"));
+        this.user.add(new User("Rocio", "Gonfaus", "Luengo", "Alumno"));
+        this.user.add(new User("David", "Hormigo", "Ramirez", "Profesor"));
         return this.user;
 
     }
