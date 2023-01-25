@@ -10,9 +10,9 @@ public class UserController {
     
     private UserRepository repository = new UserRepository();
         
-    @GetMapping("/usuarios")
+    @GetMapping("/users")
     public String displayUsers(Model model) {
         model.addAttribute("users", repository.getAll());
-        return "listausuarios";
+        return "userlist";
     }
 }
