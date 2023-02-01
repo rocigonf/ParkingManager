@@ -1,6 +1,6 @@
 package com.rociojorge.parkingmanagerDemo.user;
 public class User {
-    
+    //Hola
     //private long id;
     private String nombre;
     private String apellido1;
